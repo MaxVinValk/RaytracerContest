@@ -16,7 +16,7 @@ Note that running the scene scene_mesh_bloom_ss_dov will take a *very* long time
 
 A quite easy quality-of-life improvement, can be found in the for loops of scene::render()
 
-<h2>Loading bar</hh2>
+<h2>Loading bar</h2>
 
 Implemented a little loading bar which indicates the process of rendering. It was implemented prior
 to parallel processing, and as such, I tried to adapt it to work with parallel processing. This was tricky, and it sort of works right now, sometimes printing the same loading bar twice, but this mostly happens with simple scenes (where the loading bar is less relevant anyways).
