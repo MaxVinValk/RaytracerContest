@@ -1,4 +1,4 @@
-![header img](/screenshots/scene_mesh_bloom_ss_dov.png)
+![header img](/screenshots/scene_mesh_bloom_ss.png)
 
 <h1>Contest Submission</h1>
 
