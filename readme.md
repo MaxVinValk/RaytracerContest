@@ -29,14 +29,14 @@ to parallel processing, and as such, I tried to adapt it to work with parallel p
 
 The shading normal used to evaluate shading after a tri has been intersected by the ray is
 an interprolation of all 3 vertex normals interprolated using barymetric coordinates as weights,
-leading to smooth shading of objects. This is well demonstrated in scene_cat_smooth.png (no supersampling)
+leading to smooth shading of objects. This is well demonstrated in scene_cat_smooth.png
 
 ![cat smooth](/screenshots/scene_cat_smooth.png)
 
 <h3>Rotation</h3>
 
 Rotation for meshes around an arbitrary axis has been implemented.
-This is well demonstrated in scene_mesh_bloom.png
+This is well demonstrated in scene_mesh_bloom.png (no supersampling)
 
 ![img](/screenshots/scene_mesh_bloom.png)
 
