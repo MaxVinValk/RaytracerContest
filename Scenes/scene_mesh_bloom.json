@@ -1,0 +1,92 @@
+{
+    "Eye": [200, 200, 1000],
+    "Shadows": true,
+    "MaxRecursionDepth": 3,
+    "Outline": 0.25,
+    "Bloom": 1.7,
+    "colorRemapFloor": [0.1, 0.0, 0.0],
+    "colorRemapCeil": [1.0, 0.95, 0.95],
+    "BackgroundColor": [0.3, 0.3, 0.3],
+    "Lights": [
+        {
+            "position": [150, 300, 950],
+            "color": [1, 1, 1]
+        },
+        {
+            "position": [250, 300, 920],
+            "color": [0.5, 0.5, 0.5]
+        }
+
+    ],
+    "Objects": [
+        {
+            "type": "mesh",
+            "comment": "cat object",
+            "object": "../models/cat.obj",
+            "position": [200, 190, 870],
+            "scale": 50.0,
+            "rotation": [0, 1, 0],
+            "angle": 70,
+            "material":
+            {
+                "texture": "../textures/cat_diff.png",
+                "normalmap": "../textures/cat_norm.png",
+                "specmap": "../textures/cat_spec.png",
+                "color": [0.0, 0.0, 1.0],
+                "ka": 0.2,
+                "kd": 0.7,
+                "ks": 0,
+                "n": 64
+            }
+        },
+        {
+            "type": "plane",
+            "comment": "Orange plane",
+            "position": [0, 190, 0],
+            "normal": [0, 1, 0],
+            "material":
+            {
+                "color": [1.0, 0.5, 0.0],
+                "ka": 0.2,
+                "kd": 0.8,
+                "ks": 0.5,
+                "n": 32
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "transparent sphere",
+            "position": [190, 205, 920],
+            "radius": 5,
+            "material":
+            {
+                "color": [0.8, 0.8, 0.8],
+                "ka": 0,
+                "kd": 0.6,
+                "ks": 0.9,
+                "n": 4,
+                "ri": 1.52,
+                "trans": 0.3
+            }
+        },
+        {
+            "type": "sphere",
+            "comment": "Earth sphere",
+            "position": [225, 208, 840],
+            "radius": 8,
+            "rotation": [0, 1, 0.7],
+            "angle": 80,
+            "material":
+            {
+                "comment": "image is relative to scene file here!",
+                "texture": "../textures/earthmap1k.png",
+                "ka": 0.2,
+                "kd": 0.8,
+                "ks": 0.0,
+                "n": 1,
+                "ri": 1.52,
+                "trans": 1
+            }
+        }
+    ]
+}
