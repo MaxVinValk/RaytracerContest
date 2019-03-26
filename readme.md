@@ -1,3 +1,5 @@
+![img](/screenshots/scene_mesh_bloom_ss_dov.png)
+
 <h1>Contest Submission</h1>
 
 I have made a couple of expansions based on that which was required, some for the competition,
@@ -21,7 +23,6 @@ A quite easy quality-of-life improvement, can be found in the for loops of scene
 Implemented a little loading bar which indicates the process of rendering. It was implemented prior
 to parallel processing, and as such, I tried to adapt it to work with parallel processing. This was tricky, and it sort of works right now, sometimes printing the same loading bar twice, but this mostly happens with simple scenes (where the loading bar is less relevant anyways).
 
-
 <h2>Meshes</h2>
 
 <h3>Normal interprolation</h3>
@@ -30,10 +31,14 @@ The shading normal used to evaluate shading after a tri has been intersected by 
 an interprolation of all 3 vertex normals interprolated using barymetric coordinates as weights,
 leading to smooth shading of objects. This is well demonstrated in scene_cat_smooth.png
 
+![cat smooth](/screenshots/scene_cat_smooth.png)
+
 <h3>Rotation</h3>
 
 Rotation for meshes around an arbitrary axis has been implemented.
 This is well demonstrated in scene_mesh_bloom.png
+
+![img](/screenshots/scene_mesh_bloom.png)
 
 <h3>Texture mapping</h3>
 
@@ -43,6 +48,8 @@ at time of submission, I have to inverse my V coordinate (v = 1 - v) in order fo
 but other than that it functions well.
 This is well demonstrated in scene_cat_mesh.png, scene_mesh_bloom.png,
 scene_balls.png and scene_mesh_bloom_ss.png
+
+![img](/screenshots/scene_mesh_bloom_ss.png)
 
 <h3>Specular mapping</h3>
 
@@ -57,6 +64,8 @@ This is well demonstrated in scene_mesh_bloom_ss.png
 Spheres that are transparent have been added, which also properly refract light.
 This is well demonstrated in scene_mesh_bloom_ss.png and scene_balls.png
 
+![img](/screenshots/scene_balls.png)
+
 <h2>Other</h2>
 
 <h3>Background color</h3>
@@ -69,13 +78,18 @@ This is well demonstrated in scene_mesh_bloom.png
 Silhoutte detection has been implemented.
 This is well demonstrated in scene_cat_mesh.png
 
+![img](/screenshots/scene_cat_mesh.png)
+
 <h3>Depth-of-field effect</h3>
 
 Depth-of-field effect has been implemented by distributing the position of the camera and averaging the result.
-This is well demonstrated in scene_cat_mesh.png
+
+![img](/screenshots/scene_mesh_bloom_ss_dov.png)
 
 
 <h2>Post-processing</h2>
+
+![img](/screenshots/scene_balls.png)
 
 <h3>Color mapping</h3>
 
