@@ -1,4 +1,4 @@
-#Contest Submission - Max Valk#
+#Contest Submission
 
 I have made a couple of expansions based on that which was required, some for the competition,
 some over time. I will list that which is implemented here.
